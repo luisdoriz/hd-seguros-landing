@@ -1,13 +1,13 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes as Switch, Route } from 'react-router-dom';
 import Home from '../views/Home';
 import About from '../views/About';
 
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
+      <Route exact="true" path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
     </Switch>
   );
 };
