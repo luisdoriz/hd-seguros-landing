@@ -9,9 +9,19 @@
 body {
   background-color: $background-primary-color !important;
 }
+.ant-btn.ant-btn-primary{
+  background: $primary-color !important;
+  border-color: $primary-color !important;
+    &:hover{
+      background-color: $third-color !important;
+      border-color: $third-color !important;
+    }
+  }
 #nav {
-  padding: 30px;
-  text-align: center;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 25px;
+  text-align: right;
 
   a {
     font-weight: bold;

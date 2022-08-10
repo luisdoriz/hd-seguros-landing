@@ -12,7 +12,12 @@ const App = () => {
         </NavLink>{' '}
         |{' '}
         <NavLink exact="true" to="/about">
-          About
+          Conocenos
+        </NavLink>
+        {' '}
+        |{' '}
+        <NavLink exact="true" to="/terms">
+          Términos y condiciones
         </NavLink>
       </div>
       <Routes />

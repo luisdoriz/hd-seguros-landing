@@ -1,0 +1,51 @@
+@import "src/assets/colors";
+@import "src/assets/spaces";
+
+.container{
+  padding-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 20px;
+}
+.CUcard{
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid $third-color;
+  height: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+.title{
+  color: $third-color;
+  font-weight: bold;
+}
+.banner{
+  background-color: $secondary-color;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 25px;
+}
+.banner h2 {
+  color: white;
+  font-weight: bold;
+}
+.banner h3 {
+  color: white;
+}
+.accent{
+  color: $primary-color;
+}
+.secondary{
+  color: white;
+}
+.paddingT{
+  padding-top: 25px;
+}
+.homeText h1{
+  font-weight: bold;
+}
+.homeText h2{
+  font-weight: bold;
+}
