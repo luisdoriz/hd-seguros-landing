@@ -1,3 +1,4 @@
+// eslint-disable-no-template-curly-in-string
 import React from 'react';
 import { Col, Row, Input, Form, Button } from 'antd';
 import './styles.scss';
@@ -5,11 +6,11 @@ import './styles.scss';
 const { TextArea } = Input;
 
 const ContactUsView = () => {
-  const onFinish = () =>{
-    
+  const onFinish = () => {
+
   }
-  const onFinishFailed = () =>{
-    
+  const onFinishFailed = () => {
+
   }
   const validateMessages = {
     // eslint-disable-next-line
@@ -40,21 +41,21 @@ const ContactUsView = () => {
                 <Form.Item
                   label="Nombre"
                   name="name"
-                  rules={[{ required: true}]}
+                  rules={[{ required: true }]}
                 >
                   <Input />
                 </Form.Item>
                 <Form.Item
                   label="Correo"
                   name="email"
-                  rules={[{ type: 'email',required: true}]}
+                  rules={[{ type: 'email', required: true }]}
                 >
                   <Input />
                 </Form.Item>
                 <Form.Item
                   label="Comentario"
                   name="comment"
-                  rules={[{ required: true}]}
+                  rules={[{ required: true }]}
                 >
                   <TextArea />
                 </Form.Item>

@@ -27,11 +27,26 @@
   padding-right: 35px;
   padding-bottom: 25px;
 }
+.header{
+  background-color: $secondary-color;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 25px;
+  text-align: center;
+}
 .banner h2 {
   color: white;
   font-weight: bold;
 }
 .banner h3 {
+  color: white;
+}
+.header h2 {
+  color: white;
+  font-weight: bold;
+}
+.header h3 {
   color: white;
 }
 .accent{

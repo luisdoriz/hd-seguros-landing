@@ -1,5 +1,5 @@
 import { Row, Col, Button } from 'antd';
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import { ContactUs, ProductList } from '../components/Home';
 
 import doctorImg from '../assets/images/doctor.png';
@@ -7,10 +7,10 @@ import doctorImg from '../assets/images/doctor.png';
 const Home = () => {
   const productsRef = useRef(null);
   const handleClick = () => {
-    productsRef.current?.scrollIntoView({behavior: 'smooth'});
+    productsRef.current?.scrollIntoView({ behavior: 'smooth' });
   }
   const pitch = ["Contrata ", "un ", "Seguro"];
-  const sentence  = "Asegura a tu familia en caso de accidentes";
+  const sentence = "Asegura a tu familia en caso de accidentes";
   const arr = sentence.split(" ");
   return (
     <div className="home">
@@ -18,7 +18,7 @@ const Home = () => {
         <Col span={14}>
           <div className="homeText">
             <h1>
-              {arr.map( word => {
+              {arr.map(word => {
                 return (
                   word === "Asegura" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
                 )
@@ -28,7 +28,7 @@ const Home = () => {
             <h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus
             </h3>
-            <Button 
+            <Button
               onClick={handleClick}
               className="paddingT"
               type="primary"
@@ -45,7 +45,7 @@ const Home = () => {
         <Col className='paddingT'>
           <div className="banner">
             <h2>
-              {pitch.map( word => {
+              {pitch.map(word => {
                 return (
                   word === "Seguro" ? <span className='accent'>{word}</span> : <span className='secondary'>{word}</span>
                 )
