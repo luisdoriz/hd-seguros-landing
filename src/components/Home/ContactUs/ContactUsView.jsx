@@ -1,11 +1,12 @@
 // eslint-disable-no-template-curly-in-string
 import React from 'react';
-import { Col, Row, Input, Form, Button } from 'antd';
+import { Col, Row, Spin } from 'antd';
+import { Form } from '../../Insurance';
+import useForms from '../../../hooks/Forms/useForms';
 import './styles.scss';
 
-const { TextArea } = Input;
-
 const ContactUsView = () => {
+  const { saveForm, questions, loading } = useForms(1);
   const onFinish = () => {
 
   }
@@ -13,7 +14,6 @@ const ContactUsView = () => {
 
   }
   const validateMessages = {
-    // eslint-disable-next-line
     required: '¡${label} es requerido!',
     pattern: '${label} no tiene el formato correcto.',
     types: {
@@ -21,54 +21,31 @@ const ContactUsView = () => {
     },
   };
   return (
-    <Row className='container'>
-      <Col span={24}>
-        <div className='CUcard'>
-          <Row>
-            <Col span={24}>
-              <h2 className='title'>Contactanos</h2>
-              <h3>¿Te quedó alguna duda? Llena este formulario y nos comunicaremos contigo pronto</h3>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={24}>
-              <Form
-                onFinish={onFinish}
-                onFinishFailed={onFinishFailed}
-                validateMessages={validateMessages}
-                autoComplete="off"
-              >
-                <Form.Item
-                  label="Nombre"
-                  name="name"
-                  rules={[{ required: true }]}
-                >
-                  <Input />
-                </Form.Item>
-                <Form.Item
-                  label="Correo"
-                  name="email"
-                  rules={[{ type: 'email', required: true }]}
-                >
-                  <Input />
-                </Form.Item>
-                <Form.Item
-                  label="Comentario"
-                  name="comment"
-                  rules={[{ required: true }]}
-                >
-                  <TextArea />
-                </Form.Item>
-                <Form.Item >
-                  <Button type="primary" htmlType="submit">
-                    Enviar
-                  </Button>
-                </Form.Item>
-              </Form>
-            </Col>
-          </Row>
+
+    <Row className='container' justify='center'>
+      {loading ?
+        <div className='loader'>
+          <Spin size="large" />
         </div>
-      </Col>
+        :
+        <>
+          <Col span={12}>
+            <div className='CUcard'>
+              <Row>
+                <Col span={24}>
+                  <h2 className='title'>Contactanos</h2>
+                  <h3>¿Te quedó alguna duda? Llena este formulario y nos comunicaremos contigo pronto</h3>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={24}>
+                  <Form questions={questions} saveForm={saveForm} outlined={false} button="Enviar" />
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </>
+      }
     </Row>
   );
 };

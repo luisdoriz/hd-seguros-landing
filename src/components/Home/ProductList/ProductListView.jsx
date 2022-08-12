@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row, Carousel } from 'antd';
 import { Link } from 'react-router-dom';
 import './styles.scss';
+import data from '../../../assets/texts/insurances.json';
 
 const ProductListView = () => {
   return (
@@ -14,19 +15,16 @@ const ProductListView = () => {
       <Row className="carouselContainer">
         <Col span={24} >
           <Carousel autoplay dotPosition='top'>
-            <Link to={'/insurance/14'}>
-              <div className='card' style={{ backgroundImage: 'url("https://via.placeholder.com/500")' }}>
-                <h2 className='text'>Seguro de Gastos Médicos Mayores</h2>
-              </div>
-            </Link>
-            <Link to={'/insurance/13'}>
-              <div className='card'>
-                <h2 className='text'>Seguro de Maternidad</h2>
-              </div>
-            </Link>
-            <div className='card'>
-              <h2 className='text'>Seguro de Vida</h2>
-            </div>
+            {
+              data.map(insurance => {
+                return (
+                  <Link to={`/insurance/${insurance.tag}`}>
+                    <div className='card'>
+                      <h2 className='text'>{insurance.name}</h2>
+                    </div>
+                  </Link>
+                )
+            })}
           </Carousel>
         </Col>
       </Row>

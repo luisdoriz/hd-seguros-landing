@@ -3,16 +3,16 @@ import React from 'react';
 import { Col, Row, Input, InputNumber, Select, Form, Button } from 'antd';
 
 const { Option } = Select;
+const { TextArea } = Input;
 
-const FormView = ({ questions, saveForm }) => {
-    const onFinish = () => {
-
+const FormView = ({ questions, saveForm, outlined = true, button = "SOLICITAR COTIZACIÓN" }) => {
+    const onFinish = (values) => {
+        console.log(values);
     }
     const onFinishFailed = () => {
 
     }
     const validateMessages = {
-        
         required: '¡${label} es requerido!',
         pattern: '${label} no tiene el formato correcto.',
         types: {
@@ -22,7 +22,7 @@ const FormView = ({ questions, saveForm }) => {
     return (
         <Row className='container'>
             <Col span={24}>
-                <div className='CUcard'>
+                <div className={outlined ? 'CUcard' : ''}>
                     <Row>
                         <Col span={24}>
                             <Form
@@ -37,10 +37,12 @@ const FormView = ({ questions, saveForm }) => {
                                             <Form.Item
                                                 label={question.sentence}
                                                 name={question.sentence}
+                                                key={question.id}
                                                 rules={[{ required: true }]}
                                             >
                                                 {question.type === 'text' && <Input />}
                                                 {question.type === 'number' && <InputNumber />}
+                                                {question.type === 'comment' && <TextArea />}
                                                 {question.type === 'select' &&
                                                     <Select>
                                                         {question.Options.map((option) => {
@@ -54,8 +56,8 @@ const FormView = ({ questions, saveForm }) => {
                                         )
                                     })}
                                 <Form.Item >
-                                    <Button type="primary" htmlType="submit">
-                                        SOLICITAR COTIZACIÓN
+                                    <Button type="primary" htmlType="submit" shape='round' size='large'>
+                                        {button}
                                     </Button>
                                 </Form.Item>
                             </Form>

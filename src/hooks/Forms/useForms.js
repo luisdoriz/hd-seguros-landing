@@ -17,7 +17,7 @@ export const useForms = (idForm) => {
     const fetchForm = async () => {
       const response = await getForm(idForm);
       setForm(response.data);
-      setQuestions(response.data[0].Questions);
+      setQuestions(response.data.Questions);
       setLoading(false);
     };
     if (questions.length === 0 && loading) {
@@ -26,7 +26,7 @@ export const useForms = (idForm) => {
   }, [questions, loading, idForm]);
 
   const saveForm = async (body) => {
-    const status = await postForm(body);
+    const status = await postForm({idSurvey: body.id, answers: body.answers});
     if (status.status === 409) {
       openNotification(
         "error",

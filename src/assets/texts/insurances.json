@@ -1,0 +1,38 @@
+[
+    {
+        "tag": "medical",
+        "name": "Seguro de Gastos Médicos Mayores",
+        "id": 14,
+        "title": ["Protegerte a ti ya tu familia ahora es muy fácil","¿Debería renovar mi Seguro de Gastos Médicos Mayores?"],
+        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Gastos Médicos Mayores","Ventajas de un SGMM"],
+        "promotional": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+        ],
+        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+    },
+    {
+        "tag": "life",
+        "name": "Seguro de Vida",
+        "id": 15,
+        "title": ["Protegerte a ti ya tu familia ahora es muy fácil","¿Debería renovar mi Seguro de Vida?"],
+        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Vida","Ventajas de un Seguro de Vida"],
+        "promotional": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+        ],
+        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+    },
+    {
+        "tag": "maternity",
+        "name": "Seguro de Maternidad",
+        "id": 13,
+        "title": ["Protegerte a ti ya tu familia ahora es muy fácil","¿Qué cubre un seguro de maternidad?"],
+        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Maternidad", "Ventajas de un Seguro de Maternidad"],
+        "promotional": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+        ],
+        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+    }
+]

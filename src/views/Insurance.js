@@ -5,14 +5,14 @@ import useForms from '../hooks/Forms/useForms';
 import { Form } from '../components/Insurance';
 
 import doctorImg from '../assets/images/doctor.png';
+import data from '../assets/texts/insurances.json';
 
 const Insurance = () => {
-    const { id } = useParams();
+    const { type } = useParams();
+    const info = data.find((insurance) => insurance.tag === type)
+    const id = info.id;
     const { form, saveForm, questions, loading } = useForms(id);
-    let medicalForm = form[1];
-    const sentence = "Protegerte a ti y a tu familia ahora es muy fácil";
-    const arr = sentence.split(" ");
-    const insuranceType = medicalForm?.QuoteType;
+    const insuranceType = form?.QuoteType;
     return (
         <div className="home">
             {loading ?
@@ -26,7 +26,7 @@ const Insurance = () => {
                             <div className="header">
                                 <h2 className='title'>{insuranceType?.name}</h2>
                                 <h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi.
+                                    {info.subtitle[0]}
                                 </h3>
                             </div>
                         </Col>
@@ -35,15 +35,19 @@ const Insurance = () => {
                         <Col span={12}>
                             <div className="homeText">
                                 <h1>
-                                    {arr.map(word => {
+                                    {info.title[0].split(" ").map(word => {
                                         return (
                                             word === "familia" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
                                         )
                                     })}
                                 </h1>
-                                <h2>Contrata un seguro</h2>
+                                <h2>{info.subtitle[1].split(" ").map(word => {
+                                    return (
+                                        word === "Seguro" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
+                                    )
+                                })}</h2>
                                 <h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus
+                                    {info.promotional[0]}
                                 </h3>
                             </div>
                         </Col>
@@ -55,15 +59,17 @@ const Insurance = () => {
                         <Col span={14}>
                             <div className="homeText">
                                 <h1>
-                                    {arr.map(word => {
+                                    {info.title[1]}
+                                </h1>
+                                <h2>
+                                    {info.subtitle[2].split(" ").map(word => {
                                         return (
-                                            word === "familia" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
+                                            word === "Ventajas" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
                                         )
                                     })}
-                                </h1>
-                                <h2>Contrata un seguro</h2>
+                                </h2>
                                 <h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus
+                                    {info.promotional[1]}
                                 </h3>
                             </div>
                         </Col>

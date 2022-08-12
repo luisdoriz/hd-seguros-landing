@@ -1,12 +1,10 @@
 import axios from "axios";
-//require("dotenv").config();
 
-//const { REACT_APP_API_URL } = process.env;
+const { REACT_APP_API_URL } = process.env;
 
 const getForm = async (id) => {
   try {
-    const url = 'http://localhost:5000/survey'
-    //const url = REACT_APP_API_URL + `/persons/visitors?query=${query}`;
+    const url = REACT_APP_API_URL + `survey/${id}`;
     const { data } = await axios.get(url);
     return data;
   } catch ({ response }) {
@@ -16,8 +14,7 @@ const getForm = async (id) => {
 
 const postForm = async (body) => {
   try {
-    const url = 'http://localhost:5000/survey/answers'
-    //const url = REACT_APP_API_URL + `/persons/visitor`;
+    const url = REACT_APP_API_URL + 'survey/answers';
     const { data } = await axios.post(url, body);
     return data;
   } catch ({ response }) {

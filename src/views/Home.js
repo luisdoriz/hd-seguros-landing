@@ -1,6 +1,7 @@
 import { Row, Col, Button } from 'antd';
 import React, { useRef } from 'react';
 import { ContactUs, ProductList } from '../components/Home';
+import data from "../assets/texts/general.json";
 
 import doctorImg from '../assets/images/doctor.png';
 
@@ -9,29 +10,28 @@ const Home = () => {
   const handleClick = () => {
     productsRef.current?.scrollIntoView({ behavior: 'smooth' });
   }
-  const pitch = ["Contrata ", "un ", "Seguro"];
-  const sentence = "Asegura a tu familia en caso de accidentes";
-  const arr = sentence.split(" ");
   return (
     <div className="home">
       <Row>
         <Col span={14}>
           <div className="homeText">
             <h1>
-              {arr.map(word => {
+              {data.title.split(" ").map(word => {
                 return (
                   word === "Asegura" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
                 )
               })}
             </h1>
-            <h2>Contrata un seguro</h2>
+            <h2>{data.subtitle[0]}</h2>
             <h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus
+              {data.pitch[0]}
             </h3>
             <Button
               onClick={handleClick}
               className="paddingT"
               type="primary"
+              shape='round'
+              size='large'
             >
               Ver productos
             </Button>
@@ -45,14 +45,14 @@ const Home = () => {
         <Col className='paddingT'>
           <div className="banner">
             <h2>
-              {pitch.map(word => {
+              {data.subtitle[1].split(" ").map(word => {
                 return (
-                  word === "Seguro" ? <span className='accent'>{word}</span> : <span className='secondary'>{word}</span>
+                  word === "seguro" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
                 )
               })}
             </h2>
             <h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus
+              {data.pitch[0]}
             </h3>
           </div>
         </Col>
