@@ -22,7 +22,7 @@ const Insurance = () => {
                 :
                 <>
                     <Row>
-                        <Col className='paddingT' span={24}>
+                        <Col span={24}>
                             <div className="header">
                                 <h2 className='title'>{insuranceType?.name}</h2>
                                 <h3>
@@ -52,7 +52,7 @@ const Insurance = () => {
                             </div>
                         </Col>
                         <Col span={12}>
-                            <Form questions={questions} saveForm={saveForm} />
+                            <Form idSurvey={id} questions={questions} saveForm={saveForm} outlined ={true} text = "SOLICITAR COTIZACIÓN"/>
                         </Col>
                     </Row>
                     <Row className="paddingT">

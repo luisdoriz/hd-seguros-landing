@@ -28,8 +28,18 @@
   height: auto;
   width: auto;
 }
+.logoImg{
+  height: 100px;
+  width: auto;
+}
 .loader{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.logoContainer{
+  text-align: left;
+}
+.nav{
+  padding-top: 0px;
 }

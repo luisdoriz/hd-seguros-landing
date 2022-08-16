@@ -7,19 +7,6 @@ import './styles.scss';
 
 const ContactUsView = () => {
   const { saveForm, questions, loading } = useForms(1);
-  const onFinish = () => {
-
-  }
-  const onFinishFailed = () => {
-
-  }
-  const validateMessages = {
-    required: '¡${label} es requerido!',
-    pattern: '${label} no tiene el formato correcto.',
-    types: {
-      email: '¡No es un correo válido!',
-    },
-  };
   return (
 
     <Row className='container' justify='center'>
@@ -39,7 +26,7 @@ const ContactUsView = () => {
               </Row>
               <Row>
                 <Col span={24}>
-                  <Form questions={questions} saveForm={saveForm} outlined={false} button="Enviar" />
+                  <Form idSurvey={1} questions={questions} saveForm={saveForm} outlined={false} text="Enviar" />
                 </Col>
               </Row>
             </div>

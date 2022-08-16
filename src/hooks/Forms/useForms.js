@@ -26,17 +26,22 @@ export const useForms = (idForm) => {
   }, [questions, loading, idForm]);
 
   const saveForm = async (body) => {
-    const status = await postForm({idSurvey: body.id, answers: body.answers});
+    const status = await postForm({idSurvey: body.idSurvey, answers: body.answers});
     if (status.status === 409) {
       openNotification(
         "error",
-        "Correo no válido",
-        "El correo que ingresó ya existe"
+        "Error",
+        "Intente más tarde"
       );
     }
     else {
+      openNotification(
+        "success",
+        "Éxito",
+        "Datos capturados con éxitoo"
+      );
       setLoading(true);
-      setForm([]);
+      setQuestions([]);
     }
 
   }

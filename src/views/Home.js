@@ -52,7 +52,7 @@ const Home = () => {
               })}
             </h2>
             <h3>
-              {data.pitch[0]}
+              {data.pitch[1]}
             </h3>
           </div>
         </Col>
