@@ -16,9 +16,9 @@ const Home = () => {
         <Col span={14}>
           <div className="homeText">
             <h1>
-              {data.title.split(" ").map(word => {
+              {data.title.split(" ").map((word, i) => {
                 return (
-                  word === "Asegura" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
+                  word === "Asegura" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                 )
               })}
             </h1>
@@ -45,9 +45,9 @@ const Home = () => {
         <Col className='paddingT'>
           <div className="banner">
             <h2>
-              {data.subtitle[1].split(" ").map(word => {
+              {data.subtitle[1].split(" ").map((word, i) => {
                 return (
-                  word === "seguro" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
+                  word === "seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                 )
               })}
             </h2>

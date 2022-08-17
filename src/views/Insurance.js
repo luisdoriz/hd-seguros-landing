@@ -35,15 +35,15 @@ const Insurance = () => {
                         <Col span={12}>
                             <div className="homeText">
                                 <h1>
-                                    {info.title[0].split(" ").map(word => {
+                                    {info.title[0].split(" ").map((word, i) => {
                                         return (
-                                            word === "familia" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
+                                            word === "familia" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                                         )
                                     })}
                                 </h1>
-                                <h2>{info.subtitle[1].split(" ").map(word => {
+                                <h2>{info.subtitle[1].split(" ").map((word, i) => {
                                     return (
-                                        word === "Seguro" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
+                                        word === "Seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                                     )
                                 })}</h2>
                                 <h3>
@@ -62,9 +62,9 @@ const Insurance = () => {
                                     {info.title[1]}
                                 </h1>
                                 <h2>
-                                    {info.subtitle[2].split(" ").map(word => {
+                                    {info.subtitle[2].split(" ").map((word, i) => {
                                         return (
-                                            word === "Ventajas" ? <span className='accent'>{word.concat(" ")}</span> : <span>{word.concat(" ")}</span>
+                                            word === "Ventajas" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                                         )
                                     })}
                                 </h2>

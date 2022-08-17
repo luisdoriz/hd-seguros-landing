@@ -16,9 +16,9 @@ const ProductListView = () => {
         <Col span={24} >
           <Carousel autoplay dotPosition='top'>
             {
-              data.map(insurance => {
+              data.map((insurance, i) => {
                 return (
-                  <Link to={`/insurance/${insurance.tag}`}>
+                  <Link key={i} to={`/insurance/${insurance.tag}`}>
                     <div className='card'>
                       <h2 className='text'>{insurance.name}</h2>
                     </div>

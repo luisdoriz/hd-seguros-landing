@@ -4,13 +4,40 @@ import { Col, Row, Input, InputNumber, Select, Form, Button } from 'antd';
 
 const { Option } = Select;
 const { TextArea } = Input;
-const validateMessages = {
-    required: '¡Este campo es requerido!',
-    pattern: 'No tiene el formato correcto.',
-    types: {
-        email: '¡No es un correo válido!',
-    },
-};
+
+const renderFormQuestion = (question, i) => {
+    let pattern = /^.+$/
+    if (question.pattern) {
+        pattern = new RegExp(question.pattern);
+    }
+    return (
+        <Form.Item
+            label={<h4 className='title'>{question.sentence}</h4>}
+            name={question.id}
+            key={question.id}
+            rules={[{
+                required: true,
+                pattern: pattern,
+                message: 'Favor de llenar el campo con el formato correcto'
+            }]}
+        >
+            {
+                question.type === 'text' ? <Input style={{ borderRadius: "8px" }} /> :
+                question.type === 'number' ? <InputNumber style={{ borderRadius: "8px", width: "100%" }} /> :
+                question.type === 'comment' ? <TextArea style={{ borderRadius: "8px" }} /> :
+                question.type === 'select' &&
+                    <Select >
+                        {question.Options.map((option) => {
+                            return (
+                                <Option value={option.title}>{option.title}</Option>
+                            )
+                        })}
+                    </Select>
+            }
+        </Form.Item>
+    )
+
+}
 
 class FormView extends Component {
     formRef = React.createRef();
@@ -34,36 +61,13 @@ class FormView extends Component {
                     <div className={outlined ? 'CUcard' : ''}>
                         <Row>
                             <Col span={24}>
-                                <Form ref={this.formRef} layout="vertical" onFinish={this.onFinish} validateMessages={validateMessages}>
+                                <Form ref={this.formRef} layout="vertical" onFinish={this.onFinish} >
                                     <Col>
                                         {
-                                            questions.map((question) => {
-                                                return (
-                                                    <Form.Item
-                                                        label={<h4 className='title'>{question.sentence}</h4>}
-                                                        name={question.id}
-                                                        key={question.id}
-                                                        rules={[{
-                                                            required: true
-                                                        }]}
-                                                    >
-                                                        {
-                                                            question.type === 'text' ? <Input style={{borderRadius: "8px"}}/> :
-                                                            question.type === 'number' ? <InputNumber style={{borderRadius: "8px", width: "100%"}}/> :
-                                                            question.type === 'comment' ? <TextArea style={{borderRadius: "8px"}}/> :
-                                                            question.type === 'select' &&
-                                                                <Select >
-                                                                    {question.Options.map((option) => {
-                                                                        return (
-                                                                            <Option value={option.title}>{option.title}</Option>
-                                                                        )
-                                                                    })}
-                                                                </Select>
-                                                        }
-                                                    </Form.Item>
-                                                )
-
-                                            })}
+                                            questions.map(
+                                                renderFormQuestion
+                                            )
+                                        }
                                     </Col>
                                     <Col style={{
                                         textAlign: 'center',
