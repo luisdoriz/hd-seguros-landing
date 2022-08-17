@@ -40,25 +40,25 @@ class FormView extends Component {
                                             questions.map((question) => {
                                                 return (
                                                     <Form.Item
-                                                        label={question.sentence}
+                                                        label={<h4 className='title'>{question.sentence}</h4>}
                                                         name={question.id}
                                                         key={question.id}
                                                         rules={[{
                                                             required: true
                                                         }]}
                                                     >
-                                                        {question.type === 'text' ? <Input /> :
-                                                            question.type === 'number' ? <InputNumber /> :
-                                                                question.type === 'comment' ? <TextArea /> :
-                                                                    question.type === 'select' ?
-                                                                        <Select>
-                                                                            {question.Options.map((option) => {
-                                                                                return (
-                                                                                    <Option value={option.title}>{option.title}</Option>
-                                                                                )
-                                                                            })}
-                                                                        </Select>
-                                                                        : ''
+                                                        {
+                                                            question.type === 'text' ? <Input style={{borderRadius: "8px"}}/> :
+                                                            question.type === 'number' ? <InputNumber style={{borderRadius: "8px", width: "100%"}}/> :
+                                                            question.type === 'comment' ? <TextArea style={{borderRadius: "8px"}}/> :
+                                                            question.type === 'select' &&
+                                                                <Select >
+                                                                    {question.Options.map((option) => {
+                                                                        return (
+                                                                            <Option value={option.title}>{option.title}</Option>
+                                                                        )
+                                                                    })}
+                                                                </Select>
                                                         }
                                                     </Form.Item>
                                                 )
