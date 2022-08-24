@@ -32,7 +32,7 @@ const Insurance = () => {
                         </Col>
                     </Row>
                     <Row className="paddingT">
-                        <Col span={12}>
+                        <Col span={10}>
                             <div className="homeText">
                                 <h1>
                                     {info.title[0].split(" ").map((word, i) => {
@@ -51,25 +51,33 @@ const Insurance = () => {
                                 </h3>
                             </div>
                         </Col>
-                        <Col span={12}>
-                            <Form idSurvey={id} questions={questions} saveForm={saveForm} outlined ={true} text = "SOLICITAR COTIZACIÓN"/>
+                        <Col span={14}>
+                            <Form idSurvey={id} questions={questions} saveForm={saveForm} outlined={true} text="SOLICITAR COTIZACIÓN" />
                         </Col>
                     </Row>
                     <Row className="paddingT">
                         <Col span={14}>
                             <div className="homeText">
                                 <h1>
-                                    {info.title[1]}
+                                    {info.title[1].split(" ").map((word, i) => {
+                                        return (
+                                            word === "Seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
+                                        )
+                                    })}
                                 </h1>
                                 <h2>
                                     {info.subtitle[2].split(" ").map((word, i) => {
                                         return (
-                                            word === "Ventajas" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
+                                            word === "Ventajas" || word === "Seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                                         )
                                     })}
                                 </h2>
                                 <h3>
-                                    {info.promotional[1]}
+                                    {info.promotional[1].split(" ").map((word, i) => {
+                                        return (
+                                            word === "br" ? <br key={i}/> : word.concat(" ")
+                                        )
+                                    })}
                                 </h3>
                             </div>
                         </Col>

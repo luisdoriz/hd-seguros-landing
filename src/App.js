@@ -4,7 +4,7 @@ import { Col, Row } from 'antd';
 import Routes from './router';
 import 'antd/dist/antd.min.css';
 
-import logo from './assets/images/logo.jpeg';
+import logo from './assets/images/logo.png';
 
 const App = () => {
   return (

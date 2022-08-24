@@ -12,14 +12,14 @@
         "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
     },
     {
-        "tag": "life",
-        "name": "Seguro de Vida",
+        "tag": "educational",
+        "name": "Seguro Educacional",
         "id": 15,
-        "title": ["Protegerte a ti ya tu familia ahora es muy fácil","¿Debería renovar mi Seguro de Vida?"],
-        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Vida","Ventajas de un Seguro de Vida"],
+        "title": ["Respalda el futuro de los que más quieres","¿Por qué contratar un Seguro Educacional?"],
+        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro Educacional","Tener un Seguro Educacional te permite:"],
         "promotional": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+            "Un Seguro Educacional te permite generar un ahorro garantizado para apoyar a tu hijo o sobrino en su educación o proyectos, de acuerdo a sus diferentes etapas de vida. Asegura un futuro estable para tus hijos ayudándolos a que estudien una carrera universitaria o hagan un intercambio académico. Empieza hoy y elige el plazo para lograrlo.",
+            "- Generar un sistema de Ahorro para hacer frente a la educación de tus hijos. br - Aprovecha tu etapa productiva y paga tu póliza en solo 5, 10 ó 15 años. br - Sentirte tranquilo al saberte protegido por un seguro de vida y de incapacidad total y permanente. br - Confiado ya que tu dinero y coberturas mantendrán su poder adquisitivo, al actualizarse con la inflación o tipo de cambio. br - Una visión clara del futuro de tus hijos, ya que estarás garantizando que pase lo que pase contará con los recursos económicos para estudiar."
         ],
         "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
     },

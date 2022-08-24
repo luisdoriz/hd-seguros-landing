@@ -5,7 +5,7 @@ import { Col, Row, Input, InputNumber, Select, Form, Button } from 'antd';
 const { Option } = Select;
 const { TextArea } = Input;
 
-const renderFormQuestion = (question, i) => {
+const renderFormQuestion = (question) => {
     let pattern = /^.+$/
     if (question.pattern) {
         pattern = new RegExp(question.pattern);
@@ -29,7 +29,7 @@ const renderFormQuestion = (question, i) => {
                     <Select >
                         {question.Options.map((option) => {
                             return (
-                                <Option value={option.title}>{option.title}</Option>
+                                <Option value={option.title} key={option.id}>{option.title}</Option>
                             )
                         })}
                     </Select>
