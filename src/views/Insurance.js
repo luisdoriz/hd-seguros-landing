@@ -55,7 +55,7 @@ const Insurance = () => {
                             <Form idSurvey={id} questions={questions} saveForm={saveForm} outlined={true} text="SOLICITAR COTIZACIÓN" />
                         </Col>
                     </Row>
-                    <Row className="paddingT">
+                    <Row className="paddingT paddingB">
                         <Col span={14}>
                             <div className="homeText">
                                 <h1>
