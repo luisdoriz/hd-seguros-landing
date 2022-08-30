@@ -37,17 +37,23 @@ const Insurance = () => {
                                 <h1>
                                     {info.title[0].split(" ").map((word, i) => {
                                         return (
-                                            word === "familia" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
+                                            word === "familia" || word === "futuro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                                         )
                                     })}
                                 </h1>
-                                <h2>{info.subtitle[1].split(" ").map((word, i) => {
-                                    return (
-                                        word === "Seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
-                                    )
-                                })}</h2>
+                                <h2>
+                                    {info.subtitle[1].split(" ").map((word, i) => {
+                                        return (
+                                            word === "Seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
+                                        )
+                                    })}
+                                </h2>
                                 <h3>
-                                    {info.promotional[0]}
+                                    {info.promotional[0].split(" ").map((word, i) => {
+                                        return (
+                                            word === "br" ? <br key={i} /> : word.concat(" ")
+                                        )
+                                    })}
                                 </h3>
                             </div>
                         </Col>
@@ -75,7 +81,7 @@ const Insurance = () => {
                                 <h3>
                                     {info.promotional[1].split(" ").map((word, i) => {
                                         return (
-                                            word === "br" ? <br key={i}/> : word.concat(" ")
+                                            word === "br" ? <br key={i} /> : word.concat(" ")
                                         )
                                     })}
                                 </h3>

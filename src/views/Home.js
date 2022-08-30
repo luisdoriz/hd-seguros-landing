@@ -52,7 +52,11 @@ const Home = () => {
               })}
             </h2>
             <h3>
-              {data.pitch[1]}
+              {data.pitch[1].split(" ").map((word, i) => {
+                return (
+                  word === "br" ? <br key={i} /> : word.concat(" ")
+                )
+              })}
             </h3>
           </div>
         </Col>
