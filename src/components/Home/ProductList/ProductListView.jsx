@@ -1,7 +1,9 @@
 import React from 'react';
 import { Col, Row, Carousel } from 'antd';
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Link } from 'react-router-dom';
 import './styles.scss';
+
 import data from '../../../assets/texts/insurances.json';
 
 const ProductListView = () => {
@@ -14,17 +16,19 @@ const ProductListView = () => {
       </Row>
       <Row className="carouselContainer">
         <Col span={24} >
-          <Carousel autoplay dotPosition='top'>
+          <Carousel arrows prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />} autoplay dotPosition='top'>
             {
               data.map((insurance, i) => {
                 return (
                   <Link key={i} to={`/insurance/${insurance.tag}`}>
                     <div className='card'>
-                      <h2 className='text'>{insurance.name}</h2>
+                      <img className='carouselImg' alt={`${insurance.tag}`} src={require(`../../../assets/images/${insurance.tag}.jpg`)} />
+                      <div className='carouselText'><h2 className='text'>{insurance.name}</h2></div>
                     </div>
                   </Link>
                 )
-            })}
+              })}
+
           </Carousel>
         </Col>
       </Row>

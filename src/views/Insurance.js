@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import useForms from '../hooks/Forms/useForms';
 import { Form } from '../components/Insurance';
 
-import doctorImg from '../assets/images/doctor.png';
 import data from '../assets/texts/insurances.json';
 
 const Insurance = () => {
@@ -88,7 +87,7 @@ const Insurance = () => {
                             </div>
                         </Col>
                         <Col span={10}>
-                            <img className="homeImg" src={doctorImg} alt="doctor" />
+                            <img className="homeImg" src={require(`../assets/images/${type}.png`)} alt="doctor" />
                         </Col>
                     </Row>
                 </>
