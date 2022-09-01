@@ -24,6 +24,7 @@ const renderFormQuestion = (question) => {
             {
                 question.type === 'text' ? <Input style={{ borderRadius: "8px" }} /> :
                 question.type === 'number' ? <InputNumber style={{ borderRadius: "8px", width: "100%" }} /> :
+                question.type === 'phone' ? <input style={{ borderRadius: "8px", border: "1px solid #d9d9d9", width: "100%" }} type="tel" /> :
                 question.type === 'comment' ? <TextArea style={{ borderRadius: "8px" }} /> :
                 question.type === 'select' &&
                     <Select >
@@ -69,9 +70,7 @@ class FormView extends Component {
                                             )
                                         }
                                     </Col>
-                                    <Col style={{
-                                        textAlign: 'center',
-                                    }}>
+                                    <Col style={{ textAlign: 'center' }}>
                                         <Form.Item key="button">
                                             <Button type="primary" shape="round" htmlType="submit">
                                                 {text}
