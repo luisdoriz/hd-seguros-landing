@@ -37,7 +37,7 @@ const Home = () => {
             </Button>
           </div>
         </Col>
-        <Col span={10}>
+        <Col span={10} align="center">
           <img className="homeImg" src={doctorImg} alt="doctor" />
         </Col>
       </Row>
@@ -47,7 +47,7 @@ const Home = () => {
             <h2>
               {data.subtitle[1].split(" ").map((word, i) => {
                 return (
-                  word === "seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
+                  word === "Seguro" ? <span className='accent' key={i}>{word.concat(" ")}</span> : <span key={i}>{word.concat(" ")}</span>
                 )
               })}
             </h2>
@@ -58,6 +58,7 @@ const Home = () => {
                 )
               })}
             </h3>
+            <p style={{color:"white"}}>{data.text[0]}</p>
           </div>
         </Col>
       </Row>

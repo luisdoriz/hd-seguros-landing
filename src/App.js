@@ -15,12 +15,12 @@ const App = () => {
             <img className="logoImg" src={logo} alt="logo" />
           </Col>
           <Col span ={6} offset={14}>
-            <NavLink exact="true" to="/">
+            <NavLink style={{ fontSize: "15.5px"}} exact="true" to="/">
               Inicio
             </NavLink>
             {' '}
             |{' '}
-            <NavLink exact="true" to="/terms">
+            <NavLink style={{ fontSize: "15.5px"}} exact="true" to="/terms">
               Términos y condiciones
             </NavLink>
           </Col>

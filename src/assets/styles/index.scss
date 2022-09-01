@@ -9,6 +9,10 @@
 body {
   background-color: $background-primary-color !important;
 }
+.ant-carousel .slick-next:before,
+.ant-carousel .slick-prev:before{
+  content: '' !important;
+}
 .ant-carousel .slick-prev,
 .ant-carousel .slick-next,
 .ant-carousel .slick-prev:hover,
@@ -39,8 +43,8 @@ body {
     }
   }
 #nav {
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 45px;
+  padding-left: 45px;
   text-align: right;
   padding-bottom: 0px;
 

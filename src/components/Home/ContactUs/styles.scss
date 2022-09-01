@@ -3,8 +3,8 @@
 
 .container{
   padding-top: 30px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
   padding-bottom: 20px;
 }
 .CUcard{
@@ -14,6 +14,7 @@
   border: 2px solid $third-color;
   height: 100%;
   padding-top: 15px;
+  padding-bottom: 0px;
 }
 .title{
   color: $third-color;
@@ -22,15 +23,15 @@
 .banner{
   background-color: $secondary-color;
   padding-top: 25px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 25px;
 }
 .header{
   background-color: $secondary-color;
   padding-top: 25px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
   padding-bottom: 25px;
   text-align: center;
 }

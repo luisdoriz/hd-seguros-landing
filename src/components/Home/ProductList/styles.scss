@@ -11,32 +11,27 @@
 }
 
 .carouselContainer {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .text {
   color: black;
 }
-
-.title {
-  color: $third-color;
-}
-
 .homeText {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
   position: absolute;
   top: 31%;
 }
 
 .homeImg {
   height: auto;
-  width: auto;
+  width: 75%;
 }
 
 .logoImg {
-  height: 135px;
+  height: 150px;
   width: auto;
 }
 
@@ -61,7 +56,7 @@
 
 .carouselText {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

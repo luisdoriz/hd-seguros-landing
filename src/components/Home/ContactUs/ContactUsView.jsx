@@ -16,10 +16,10 @@ const ContactUsView = () => {
         </div>
         :
         <>
-          <Col span={12}>
+          <Col span={12} className="paddingB">
             <div className='CUcard'>
               <Row>
-                <Col span={24}>
+                <Col span={24} align="center">
                   <h2 className='title'>Contactanos</h2>
                   <h3>¿Te quedó alguna duda? Llena este formulario y nos comunicaremos contigo pronto</h3>
                 </Col>

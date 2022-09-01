@@ -31,7 +31,7 @@ const Insurance = () => {
                         </Col>
                     </Row>
                     <Row className="paddingT">
-                        <Col span={10}>
+                        <Col span={12}>
                             <div className="homeText">
                                 <h1>
                                     {info.title[0].split(" ").map((word, i) => {
@@ -56,7 +56,7 @@ const Insurance = () => {
                                 </h3>
                             </div>
                         </Col>
-                        <Col span={14}>
+                        <Col span={12} align="center">
                             <Form idSurvey={id} questions={questions} saveForm={saveForm} outlined={true} text="SOLICITAR COTIZACIÓN" />
                         </Col>
                     </Row>
@@ -86,7 +86,7 @@ const Insurance = () => {
                                 </h3>
                             </div>
                         </Col>
-                        <Col span={10}>
+                        <Col span={10} align="center">
                             <img className="homeImg" src={require(`../assets/images/${type}.png`)} alt="doctor" />
                         </Col>
                     </Row>
