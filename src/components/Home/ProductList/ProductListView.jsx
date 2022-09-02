@@ -52,7 +52,7 @@ const ProductListView = () => {
                   <Link key={i} to={`/insurance/${insurance.tag}`}>
                     <div className='card'>
                       <img className='carouselImg' alt={`${insurance.tag}`} src={require(`../../../assets/images/${insurance.tag}.jpg`)} />
-                      <div className='carouselText'><h2 className='title'>{insurance.name}</h2></div>
+                      <div className='carouselText'><h2 className='titleCarousel'>{insurance.name}</h2></div>
                     </div>
                   </Link>
                 )
