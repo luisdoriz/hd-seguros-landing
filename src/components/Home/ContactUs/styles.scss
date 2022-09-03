@@ -3,8 +3,6 @@
 
 .container{
   padding-top: 30px;
-  padding-left: 45px;
-  padding-right: 45px;
   padding-bottom: 20px;
 }
 .CUcard{
@@ -27,15 +25,13 @@
 .banner{
   background-color: $secondary-color;
   padding-top: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
+  // padding-left: 100px;
+  // padding-right: 100px;
   padding-bottom: 25px;
 }
 .header{
   background-color: $secondary-color;
   padding-top: 25px;
-  padding-left: 45px;
-  padding-right: 45px;
   padding-bottom: 25px;
   text-align: center;
 }

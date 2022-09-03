@@ -37,31 +37,33 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
 
 const ProductListView = () => {
   return (
-    <>
-      <Row justify='center'>
-        <Col>
-          <h1 className='title'>Productos</h1>
-        </Col>
-      </Row>
-      <Row className="carouselContainer">
-        <Col span={24} >
-          <Carousel arrows prevArrow={<SlickArrowLeft />} nextArrow={<SlickArrowRight />} autoplay dotPosition='top'>
-            {
-              data.map((insurance, i) => {
-                return (
-                  <Link key={i} to={`/insurance/${insurance.tag}`}>
-                    <div className='card'>
-                      <img className='carouselImg' alt={`${insurance.tag}`} src={require(`../../../assets/images/${insurance.tag}.jpg`)} />
-                      <div className='carouselText'><h2 className='titleCarousel'>{insurance.name}</h2></div>
-                    </div>
-                  </Link>
-                )
-              })}
+    <Row justify='center' gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+      <Col span={20}>
+        <h1 className='title' style={{ textAlign: "center" }}>Productos</h1>
+      </Col>
+      <Col span={20} >
+        <Carousel
+          arrows
+          prevArrow={<SlickArrowLeft />}
+          nextArrow={<SlickArrowRight />}
+          autoplay 
+          dotPosition='top'
+        >
+          {
+            data.map((insurance, i) => {
+              return (
+                <Link key={i} to={`/insurance/${insurance.tag}`}>
+                  <div className='card'>
+                    <img className='carouselImg' alt={`${insurance.tag}`} src={require(`../../../assets/images/${insurance.tag}.jpg`)} />
+                    <div className='carouselText'><h2 className='titleCarousel'>{insurance.name}</h2></div>
+                  </div>
+                </Link>
+              )
+            })}
 
-          </Carousel>
-        </Col>
-      </Row>
-    </>
+        </Carousel>
+      </Col>
+    </Row>
   );
 };
 
