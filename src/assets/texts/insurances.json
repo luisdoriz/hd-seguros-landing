@@ -34,5 +34,17 @@
             "El seguro de maternidad es un apoyo económico para cubrir los gastos del parto. Para recibirlo se requiere que al momento del nacimiento del bebé la mamá cuente mínimo con 10 meses de antigüedad con el seguro médico."
         ],
         "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+    },
+    {
+        "tag": "travel",
+        "name": "Seguro de Gastos Médicos para Intercambios o Viajes",
+        "id": 16,
+        "title": ["Protegerte a ti y a tu familia ahora es muy fácil","¿Debería contratar un Seguro de Gastos Médicos para Viajes?"],
+        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Gastos Médicos para Viajes","Siéntete protegido cuando estás fuera de tu país"],
+        "promotional": [
+            "Para disfrutar al máximo tu estancia en el extranjero, ya sea por trabajo o estudio, este producto es el que necesitas. Vínculo mundial es el único seguro que te ofrece beneficios como contrataciones de 1 mes o la duración de tu viaje.",
+            "Un Seguro de Gastos Médicos para Viajes te servirá para cubrirte de emergencias y cualquier inconveniente médico que tengas en tu viaje. br br Contar con una asistencia  nos permite disfrutar de nuestro viaje sabiendo que ante una emergencia contaremos con la atención que necesitemos las 24 horas del día, durante todos los días de nuestro viaje."
+        ],
+        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
     }
 ]

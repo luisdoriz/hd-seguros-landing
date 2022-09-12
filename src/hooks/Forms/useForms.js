@@ -37,8 +37,8 @@ export const useForms = (idForm) => {
     else {
       openNotification(
         "success",
-        "Éxito",
-        "Datos capturados con éxito"
+        "Datos capturados con éxito",
+        "Pronto nos comunicaremos contigo"
       );
       setLoading(true);
       setQuestions([]);

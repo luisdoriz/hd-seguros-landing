@@ -1,6 +1,6 @@
 // eslint-disable-no-template-curly-in-string
 import React, { Component } from 'react';
-import { Col, Row, Input, InputNumber, Select, Form, Button } from 'antd';
+import { Col, Row, Input, InputNumber, Select, Form, Button, DatePicker } from 'antd';
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -26,6 +26,7 @@ const renderFormQuestion = (question) => {
                 question.type === 'number' ? <InputNumber style={{ borderRadius: "8px", width: "100%" }} /> :
                 question.type === 'phone' ? <input style={{ borderRadius: "8px", border: "1px solid #d9d9d9", width: "100%" }} type="tel" /> :
                 question.type === 'comment' ? <TextArea style={{ borderRadius: "8px" }} /> :
+                question.type === 'date' ? <DatePicker format="YYYY/MM/DD" style={{ borderRadius: "8px", width: "100%"  }} /> :
                 question.type === 'select' &&
                     <Select >
                         {question.Options.map((option) => {
@@ -48,6 +49,7 @@ class FormView extends Component {
         const ids = Object.keys(values);
         const answers = [];
         ids.forEach((id) => {
+            
             answers.push({ idQuestion: parseInt(id), response: values[id] });
         })
         const body = { idSurvey: idSurvey, answers: answers }

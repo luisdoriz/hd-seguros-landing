@@ -63,7 +63,7 @@ const Home = () => {
         justify="center"
       >
         <Col span={20}>
-          <div>
+          <div ref={productsRef}>
             <h2>
               {data.subtitle[1].split(' ').map((word, i) => {
                 return word === 'Seguro' ? (
@@ -84,7 +84,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <div ref={productsRef} className="container">
+      <div className="container">
         <ProductList />
       </div>
       <ContactUs />
