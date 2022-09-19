@@ -61,7 +61,7 @@ const Terms = () => {
               cotizaycompraseguros.com Vender, alquilar o sublicenciar material
               de cotizaycompraseguros.com Reproducir, duplicar o copiar material
               de cotizaycompraseguros.com Redistribuir contenido de
-              cotizaycompraseguros.com Este acuerdo comenzará el fecha presente.
+              cotizaycompraseguros.com Este acuerdo comenzará la fecha presente.
               Partes de este sitio web ofrecen a los usuarios la oportunidad de
               publicar e intercambiar opiniones e información en determinadas
               áreas. HD Seguros no filtra, edita, publica ni revisa los
@@ -113,7 +113,7 @@ const Terms = () => {
               comunidad .com; asociaciones u otros grupos que representan
               organizaciones benéficas; distribuidores de directorios en línea;
               portales de Internet; firmas de contabilidad, derecho y
-              consultoría; y instituciones educativas y asociaciones
+              consultoría; e instituciones educativas y asociaciones
               comerciales. Aprobaremos las solicitudes de enlace de estas
               organizaciones si: (a) el enlace no nos haría vernos
               desfavorablemente a nosotros mismos ni a nuestras empresas
