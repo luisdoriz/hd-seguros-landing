@@ -23,7 +23,7 @@ const ContactUsView = () => {
             <Row>
               <Col span={24} align="center">
                 <h2 className='title'>Contáctanos</h2>
-                <h3>¿Te quedó alguna duda? Llena este formulario y nos comunicaremos contigo pronto</h3>
+                <h3>Cotiza sin compromiso, con gusto asesoramos lo mejor para tus necesidades</h3>
               </Col>
             </Row>
             <Row>
