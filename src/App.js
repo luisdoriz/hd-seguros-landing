@@ -23,7 +23,7 @@ const App = () => {
             </NavLink>{' '} */}
             {/* |{' '} */}
             <NavLink style={{ fontSize: '15.5px' }} exact="true" to="/terms">
-              Términos y condiciones
+              Términos y Condiciones
             </NavLink>
           </Col>
         </Row>

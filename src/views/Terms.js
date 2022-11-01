@@ -7,7 +7,7 @@ const Terms = () => {
       <Row>
         <Col span={24} className="paddingT">
           <div className="banner termsHeader">
-            <h2>Términos y condiciones</h2>
+            <h2>Términos y Condiciones</h2>
           </div>
         </Col>
       </Row>
