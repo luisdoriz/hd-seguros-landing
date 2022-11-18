@@ -45,11 +45,12 @@ body {
 #nav {
   padding-right: 45px;
   padding-left: 45px;
-  text-align: right;
   padding-bottom: 0px;
-
+  
   a {
+    text-align: right;
     font-weight: bold;
+    font-size: 15.5px;
     color: $secondary-color;
 
     &.active {
