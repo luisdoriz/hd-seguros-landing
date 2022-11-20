@@ -1,11 +1,11 @@
 @import "src/assets/colors";
 @import "src/assets/spaces";
 
-.container{
+.container {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.CUcard{
+.CUcard {
   background-color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -14,22 +14,22 @@
   padding-top: 15px;
   padding-bottom: 0px;
 }
-.title{
+.title {
   color: $third-color;
   font-weight: bold;
 }
-.titleCarousel{
+.titleCarousel {
   color: black;
   font-weight: bold;
 }
-.banner{
+.banner {
   background-color: $secondary-color;
   padding-top: 25px;
   // padding-left: 100px;
   // padding-right: 100px;
   padding-bottom: 25px;
 }
-.header{
+.header {
   background-color: $secondary-color;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -41,6 +41,9 @@
 }
 .banner h3 {
   color: white;
+  a {
+    color: inherit;
+  }
 }
 .header h2 {
   color: white;
@@ -49,24 +52,24 @@
 .header h3 {
   color: white;
 }
-.accent{
+.accent {
   color: $primary-color;
 }
-.secondary{
+.secondary {
   color: white;
 }
-.paddingT{
+.paddingT {
   padding-top: 25px;
 }
-.paddingB{
+.paddingB {
   padding-bottom: 50px;
 }
-.homeText h1{
+.homeText h1 {
   font-weight: bold;
 }
-.homeText h2{
+.homeText h2 {
   font-weight: bold;
 }
-.termsHeader{
+.termsHeader {
   text-align: center;
 }

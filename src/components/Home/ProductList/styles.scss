@@ -30,8 +30,8 @@
 
 .logoImg {
   padding: 20px 0;
-  height: 120px;
-  width: auto;
+  max-height: 120px;
+  max-width: 100%;
 }
 
 .loader {
@@ -46,7 +46,7 @@
   // img {
   //   flex-shrink: 0;
   //   width: auto;
-  //   height:120px;
+  //   max-height: 120px;
   //   object-fit: cover;
   //   position: absolute;
   // }
