@@ -51,7 +51,7 @@ const App = () => {
         </Col>
       </Row>
       <a
-        href="https://wa.me/8120351847"
+        href="https://wa.me/5218120351847"
         class="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
