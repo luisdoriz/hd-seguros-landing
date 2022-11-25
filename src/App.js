@@ -51,10 +51,11 @@ const App = () => {
         </Col>
       </Row>
       <a
-        href="https://wa.me/5218120351847"
+        href="https://api.whatsapp.com/send/?phone=5218120351847&text&type=phone_number&app_absent=0&text=%C2%A1Hola!%20%20mi%20nombre%20es:%0ADeseo%20cotizar%20seguro%20de:"
         class="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
+        text=""
       >
         <i class="fa fa-whatsapp whatsapp-icon"></i>
       </a>
