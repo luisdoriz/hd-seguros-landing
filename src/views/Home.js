@@ -1,5 +1,7 @@
 import { Row, Col, Button } from 'antd';
 import React, { useRef } from 'react';
+import YouTube from 'react-youtube';
+
 import { ContactUs, ProductList } from '../components/Home';
 import data from '../assets/texts/general.json';
 
@@ -27,7 +29,7 @@ const Home = () => {
         justify="center"
         align="middle"
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-        style={{paddingBottom: "30px"}}
+        style={{ paddingBottom: '30px' }}
       >
         <Col
           xs={{ order: 2, span: 15 }}
@@ -55,6 +57,15 @@ const Home = () => {
           md={{ order: 2, span: 10 }}
         >
           <img className="homeImg" src={doctorImg} alt="doctor" />
+        </Col>
+      </Row>
+      <Row
+        className="banner"
+        gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+        justify="center"
+      >
+        <Col span={20}>
+          <YouTube videoId={'lFhUQygRXQA'} className="youtube-container" />
         </Col>
       </Row>
       <Row
