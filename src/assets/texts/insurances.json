@@ -1,50 +1,90 @@
 [
-    {
-        "tag": "medical",
-        "name": "Seguro de Gastos Médicos Mayores",
-        "id": 14,
-        "title": ["Protegerte a ti y a tu Familia ahora es muy Fácil","¿Debería renovar mi Seguro de Gastos Médicos Mayores?"],
-        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Gastos Médicos Mayores","Ahórrate el imprevisto médico económico de tu cuenta hospitalaria"],
-        "promotional": [
-            "El Seguro de Gastos Médicos mayores es uno de los productos más importantes e indispensables que existen en la actualidad, los cuales tienen la finalidad de cuidar de tu salud y la de tu familia. En la actualidad, sabemos que existen un sin número de factores y amenazas que vulneran en todo lugar y momento nuestra seguridad y bienestar, ya sean desde enfermedades hasta accidentes imprevistos. Ante cualquier situación crítica o de emergencia es necesario estar prevenido con un Seguro de Gastos Médicos, el cual nos respalde económicamente para sobrellevar el proceso.",
-            "Sabemos que la salud es lo más importante en tu familia, por eso te protegemos en los mejores hospitales y con los mejores doctores de México. Adquiere tu Seguro de Gastos Médicos Mayores para que tú y tu familia estén tranquilos. br br 3 y 6 meses sin intereses en tarjetas participantes."
-        ],
-        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
-    },
-    {
-        "tag": "educational",
-        "name": "Seguro para Garantizar la Educación",
-        "id": 15,
-        "title": ["Respalda el futuro de los que más quieres","¿Por qué contratar un Seguro para Garantizar la Educación?"],
-        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro para Garantizar la Educación","Tener un Seguro para Garantizar la Educación te permite:"],
-        "promotional": [
-            "Deja a tu hijo con la mejor herencia que les puedas dar, su educación, y créate el hábito de ahorrar. br br El producto educacional te permite generar un ahorro garantizado para cubrir los gastos de la educación de tus hijos. Te otorgamos protección por invalidez o fallecimiento. Garantiza un buen futuro para tus hijos.",
-            "- Generar un sistema de Ahorro para hacer frente a la educación de tus hijos. br - Aprovecha tu etapa productiva y paga tu póliza en solo 5, 10 o 15 años. br - Sentirte tranquilo al saberte protegido por un seguro de vida y de incapacidad total y permanente. br - Confiado ya que tu dinero y coberturas mantendrán su poder adquisitivo, al actualizarse con la inflación o tipo de cambio. br - Una visión clara del futuro de tus hijos, ya que estarás garantizando que pase lo que pase contará con los recursos económicos para estudiar."
-        ],
-        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
-    },
-    {
-        "tag": "maternity",
-        "name": "Seguro de Maternidad",
-        "id": 13,
-        "title": ["Protegerte a ti y a tu Familia ahora es muy Fácil","¿Qué cubre un Seguro de Maternidad?"],
-        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Maternidad", "¡Cuida a tu bebé!"],
-        "promotional": [
-            "Un seguro por maternidad cubre los gastos médicos y hospitalarios del parto o cesárea siempre y cuando la asegurada tenga una antigüedad mínima de 10 meses con la póliza. Uno de los mayores beneficios, es una ayuda para maternidad.  Además, contarás con una cobertura en caso de llegar a sufrir complicaciones en el embarazo como: parto prematuro, complicaciones congénitas del recién nacido, embarazo extrauterino, enfermedades hipertensivas, preeclampsia y eclampsia, entre otras.",
-            "El seguro de maternidad es un apoyo económico para cubrir los gastos del parto o cualquier inconveniente que tenga el bebé al nacer. Para recibirlo se requiere que al momento del nacimiento del bebé la mamá cuente mínimo con 10 meses de antigüedad con el seguro médico."
-        ],
-        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
-    },
-    {
-        "tag": "travel",
-        "name": "Seguro de Gastos Médicos para Intercambios o Viajes",
-        "id": 16,
-        "title": ["Protegerte a ti y a tu Familia ahora es muy Fácil","¿Debería contratar un Seguro de Gastos Médicos para Viajes?"],
-        "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Gastos Médicos para Viajes","Siéntete protegido cuando estás fuera de tu país"],
-        "promotional": [
-            "Para disfrutar al máximo tu estancia en el extranjero, ya sea por trabajo o estudio, este producto es el que necesitas. Vínculo mundial es el único seguro que te ofrece beneficios como contrataciones de 1 mes o la duración de tu viaje. br Además te brinda exclusivos servicios como: br - Orientación telefónica sobre coberturas, trámites, precios preferenciales en consultas o descuentos. br - Apoyo para resolver emergencias médicas, pérdida de documentos, información y reservaciones para restaurantes, hoteles, medios de transporte y eventos culturales.",
-            "Un Seguro de Gastos Médicos para Viajes te servirá para cubrirte de emergencias y cualquier inconveniente médico que tengas en tu viaje. br br Contar con una asistencia nos permite disfrutar de nuestro viaje sabiendo que ante una emergencia contaremos con la atención que necesitemos las 24 horas del día, durante todos los días de nuestro viaje."
-        ],
-        "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
-    }
+  {
+    "tag": "medical",
+    "name": "Seguro de Gastos Médicos Mayores",
+    "id": 14,
+    "title": [
+      "Protegerte a ti y a tu Familia ahora es muy Fácil",
+      "¿Debería renovar mi Seguro de Gastos Médicos Mayores?"
+    ],
+    "subtitle": [
+      "¡Contrata un seguro!",
+      "Contrata un Seguro de Gastos Médicos Mayores",
+      "Ahórrate el imprevisto médico económico de tu cuenta hospitalaria"
+    ],
+    "promotional": [
+      "El Seguro de Gastos Médicos mayores es uno de los productos más importantes e indispensables que existen en la actualidad, los cuales tienen la finalidad de cuidar de tu salud y la de tu familia. En la actualidad, sabemos que existen un sin número de factores y amenazas que vulneran en todo lugar y momento nuestra seguridad y bienestar, ya sean desde enfermedades hasta accidentes imprevistos. Ante cualquier situación crítica o de emergencia es necesario estar prevenido con un Seguro de Gastos Médicos, el cual nos respalde económicamente para sobrellevar el proceso.",
+      "Sabemos que la salud es lo más importante en tu familia, por eso te protegemos en los mejores hospitales y con los mejores doctores de México. Adquiere tu Seguro de Gastos Médicos Mayores para que tú y tu familia estén tranquilos. br br 3 y 6 meses sin intereses en tarjetas participantes."
+    ],
+    "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+  },
+  {
+    "tag": "educational",
+    "name": "Seguro para Garantizar la Educación",
+    "id": 15,
+    "title": [
+      "Respalda el futuro de los que más quieres",
+      "¿Por qué contratar un Seguro para Garantizar la Educación?"
+    ],
+    "subtitle": [
+      "¡Contrata un seguro!",
+      "Contrata un Seguro para Garantizar la Educación",
+      "Tener un Seguro para Garantizar la Educación te permite:"
+    ],
+    "promotional": [
+      "Deja a tu hijo con la mejor herencia que les puedas dar, su educación, y créate el hábito de ahorrar. br br El producto educacional te permite generar un ahorro garantizado para cubrir los gastos de la educación de tus hijos. Te otorgamos protección por invalidez o fallecimiento. Garantiza un buen futuro para tus hijos.",
+      "- Generar un sistema de Ahorro para hacer frente a la educación de tus hijos. br - Aprovecha tu etapa productiva y paga tu póliza en solo 5, 10 o 15 años. br - Sentirte tranquilo al saberte protegido por un seguro de vida y de incapacidad total y permanente. br - Confiado ya que tu dinero y coberturas mantendrán su poder adquisitivo, al actualizarse con la inflación o tipo de cambio. br - Una visión clara del futuro de tus hijos, ya que estarás garantizando que pase lo que pase contará con los recursos económicos para estudiar."
+    ],
+    "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+  },
+  {
+    "tag": "maternity",
+    "name": "Seguro de Maternidad",
+    "id": 13,
+    "title": [
+      "Protegerte a ti y a tu Familia ahora es muy Fácil",
+      "¿Qué cubre un Seguro de Maternidad?"
+    ],
+    "subtitle": [
+      "¡Contrata un seguro!",
+      "Contrata un Seguro de Maternidad",
+      "¡Cuida a tu bebé!"
+    ],
+    "promotional": [
+      "Un seguro por maternidad cubre los gastos médicos y hospitalarios del parto o cesárea siempre y cuando la asegurada tenga una antigüedad mínima de 10 meses con la póliza. Uno de los mayores beneficios, es una ayuda para maternidad.  Además, contarás con una cobertura en caso de llegar a sufrir complicaciones en el embarazo como: parto prematuro, complicaciones congénitas del recién nacido, embarazo extrauterino, enfermedades hipertensivas, preeclampsia y eclampsia, entre otras.",
+      "El seguro de maternidad es un apoyo económico para cubrir los gastos del parto o cualquier inconveniente que tenga el bebé al nacer. Para recibirlo se requiere que al momento del nacimiento del bebé la mamá cuente mínimo con 10 meses de antigüedad con el seguro médico."
+    ],
+    "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+  },
+  {
+    "tag": "travel",
+    "name": "Seguro de Gastos Médicos para Intercambios o Viajes",
+    "id": 16,
+    "title": [
+      "Protegerte a ti y a tu Familia ahora es muy Fácil",
+      "¿Debería contratar un Seguro de Gastos Médicos para Viajes?"
+    ],
+    "subtitle": [
+      "¡Contrata un seguro!",
+      "Contrata un Seguro de Gastos Médicos para Viajes",
+      "Siéntete protegido cuando estás fuera de tu país"
+    ],
+    "promotional": [
+      "Para disfrutar al máximo tu estancia en el extranjero, ya sea por trabajo o estudio, este producto es el que necesitas. Vínculo mundial es el único seguro que te ofrece beneficios como contrataciones de 1 mes o la duración de tu viaje. br Además te brinda exclusivos servicios como: br - Orientación telefónica sobre coberturas, trámites, precios preferenciales en consultas o descuentos. br - Apoyo para resolver emergencias médicas, pérdida de documentos, información y reservaciones para restaurantes, hoteles, medios de transporte y eventos culturales.",
+      "Un Seguro de Gastos Médicos para Viajes te servirá para cubrirte de emergencias y cualquier inconveniente médico que tengas en tu viaje. br br Contar con una asistencia nos permite disfrutar de nuestro viaje sabiendo que ante una emergencia contaremos con la atención que necesitemos las 24 horas del día, durante todos los días de nuestro viaje."
+    ],
+    "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+  },
+  {
+    "tag": "car",
+    "name": "Seguro de Automóvil",
+    "id": 2,
+    "title": ["¡Asegura tu auto con nosotros!", "¿Debería contratar un Seguro de Auto?"],
+    "subtitle": ["¡Contrata un seguro!", "Contrata un Seguro de Auto", "Siéntete protegido al volante"],
+    "promotional": [
+      "Tenemos las mejores opciones y coberturas para ti elige el deducible ideal y agrega nuevas coberturas contrata en línea de forma segura y recibe tu póliza al instante",
+      ""
+    ],
+    "termsAndConditions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus cursus mi, sed maximus enim elementum eget. Maecenas nec lacus at risus hendrerit facilisis eget congue nunc. In aliquam tellus quis velit tempor, et fringilla dolor feugiat. Curabitur elementum pulvinar tortor, at porta libero aliquet et. Phasellus"
+  }
 ]
