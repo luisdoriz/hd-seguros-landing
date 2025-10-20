@@ -1,0 +1,447 @@
+@import "src/assets/colors";
+@import "src/assets/spaces";
+
+/**
+ * Insurance Form Component Styles
+ * Modern, user-friendly form design
+ */
+
+.container {
+  width: 100%;
+
+  .CUcard {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .ant-form {
+    width: 100%;
+
+    .ant-form-item {
+      margin-bottom: $space-6;
+
+      @media (max-width: 480px) {
+        margin-bottom: $space-5;
+      }
+
+      // Keep spacing for all items except the button wrapper
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      // Add extra spacing before the submit button
+      &:has(.ant-btn-primary) {
+        margin-top: $space-8;
+
+        @media (max-width: 480px) {
+          margin-top: $space-6;
+        }
+      }
+    }
+
+    // Label styles
+    .ant-form-item-label {
+      padding-bottom: $space-2;
+
+      > label {
+        font-size: 0.9375rem;
+        font-weight: 700;
+        color: $third-color;
+        height: auto;
+        line-height: 1.4;
+
+        &.ant-form-item-required {
+          &::before {
+            color: $primary-color;
+            font-size: 1.125rem;
+            margin-right: $space-1;
+          }
+        }
+      }
+
+      .title {
+        font-size: 0.9375rem;
+        font-weight: 700;
+        color: $third-color;
+        margin: 0;
+        line-height: 1.4;
+
+        @media (max-width: 480px) {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    // Input field styles
+    .ant-input,
+    input[type="tel"] {
+      height: 48px;
+      border: 2px solid $gray-200;
+      border-radius: $radius-md;
+      padding: $space-3 $space-4;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $third-color;
+      background: white;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+
+      &::placeholder {
+        color: $gray-400;
+        font-weight: 400;
+      }
+
+      &:hover {
+        border-color: $primary-light;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      &:focus,
+      &:focus-visible {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 4px rgba($primary-color, 0.12),
+                    0 2px 8px rgba(0, 0, 0, 0.05);
+        outline: none;
+      }
+
+      @media (max-width: 480px) {
+        height: 46px;
+        font-size: 0.9375rem;
+        padding: $space-3;
+      }
+    }
+
+    // Number input styles
+    .ant-input-number {
+      width: 100%;
+      border: 2px solid $gray-200;
+      border-radius: $radius-md;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      .ant-input-number-input {
+        height: 44px;
+        padding: $space-3 $space-4;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $third-color;
+
+        @media (max-width: 480px) {
+          height: 42px;
+          font-size: 0.9375rem;
+          padding: $space-3;
+        }
+      }
+
+      .ant-input-number-handler-wrap {
+        border-left: 2px solid $gray-200;
+        background: $gray-50;
+      }
+
+      &:hover {
+        border-color: $primary-light;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      &:focus,
+      &.ant-input-number-focused {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 4px rgba($primary-color, 0.12),
+                    0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    // Textarea styles
+    .ant-input-textarea {
+      textarea {
+        min-height: 100px;
+        border: 2px solid $gray-200;
+        border-radius: $radius-md;
+        padding: $space-3 $space-4;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $third-color;
+        line-height: 1.6;
+        resize: vertical;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+
+        &::placeholder {
+          color: $gray-400;
+          font-weight: 400;
+        }
+
+        &:hover {
+          border-color: $primary-light;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        &:focus,
+        &:focus-visible {
+          border-color: $primary-color;
+          box-shadow: 0 0 0 4px rgba($primary-color, 0.12),
+                      0 2px 8px rgba(0, 0, 0, 0.05);
+          outline: none;
+        }
+
+        @media (max-width: 480px) {
+          min-height: 80px;
+          font-size: 0.9375rem;
+          padding: $space-3;
+        }
+      }
+    }
+
+    // Date picker styles
+    .ant-picker {
+      width: 100%;
+      height: 48px;
+      border: 2px solid $gray-200;
+      border-radius: $radius-md;
+      padding: $space-3 $space-4;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      input {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $third-color;
+
+        @media (max-width: 480px) {
+          font-size: 0.9375rem;
+        }
+      }
+
+      .ant-picker-suffix {
+        color: $gray-500;
+      }
+
+      &:hover {
+        border-color: $primary-light;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      &.ant-picker-focused {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 4px rgba($primary-color, 0.12),
+                    0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      @media (max-width: 480px) {
+        height: 46px;
+        padding: $space-3;
+      }
+    }
+
+    // Select dropdown styles
+    .ant-select {
+      width: 100%;
+
+      .ant-select-selector {
+        height: 48px !important;
+        border: 2px solid $gray-200 !important;
+        border-radius: $radius-md !important;
+        padding: 0 $space-4 !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+
+        .ant-select-selection-item {
+          line-height: 44px !important;
+          font-size: 1rem;
+          font-weight: 500;
+          color: $third-color;
+
+          @media (max-width: 480px) {
+            font-size: 0.9375rem;
+          }
+        }
+
+        .ant-select-selection-placeholder {
+          line-height: 44px !important;
+          color: $gray-400;
+          font-weight: 400;
+        }
+
+        @media (max-width: 480px) {
+          height: 46px !important;
+          padding: 0 $space-3 !important;
+
+          .ant-select-selection-item,
+          .ant-select-selection-placeholder {
+            line-height: 42px !important;
+          }
+        }
+      }
+
+      &:hover .ant-select-selector {
+        border-color: $primary-light !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+      }
+
+      &.ant-select-focused .ant-select-selector {
+        border-color: $primary-color !important;
+        box-shadow: 0 0 0 4px rgba($primary-color, 0.12),
+                    0 2px 8px rgba(0, 0, 0, 0.05) !important;
+      }
+
+      .ant-select-arrow {
+        color: $gray-500;
+      }
+    }
+
+    // Error state styles
+    .ant-form-item-has-error {
+      .ant-input,
+      input[type="tel"],
+      .ant-input-number,
+      .ant-picker,
+      .ant-select-selector,
+      textarea {
+        border-color: $error-color !important;
+
+        &:focus,
+        &:focus-visible,
+        &.ant-input-focused,
+        &.ant-input-number-focused,
+        &.ant-picker-focused {
+          box-shadow: 0 0 0 4px rgba($error-color, 0.12),
+                      0 2px 8px rgba(0, 0, 0, 0.05) !important;
+        }
+      }
+
+      .ant-form-item-explain-error {
+        font-size: 0.875rem;
+        margin-top: $space-2;
+        font-weight: 500;
+        color: $error-color;
+      }
+    }
+
+    // Submit button
+    .ant-btn-primary {
+      width: 100%;
+      height: 52px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: $radius-md;
+      background: linear-gradient(135deg, $primary-color 0%, $primary-light 100%);
+      border: none;
+      box-shadow: 0 8px 25px rgba($primary-color, 0.4);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s ease;
+      }
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba($primary-color, 0.5);
+        background: linear-gradient(135deg, $primary-dark 0%, $primary-color 100%);
+        color: white;
+
+        &::before {
+          left: 100%;
+        }
+      }
+
+      &:active {
+        transform: translateY(-1px);
+      }
+
+      &:focus {
+        box-shadow: 0 12px 35px rgba($primary-color, 0.5),
+                    0 0 0 4px rgba($primary-color, 0.15);
+      }
+
+      @media (max-width: 480px) {
+        height: 50px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// Loading state
+.ant-form-item-control-input {
+  .ant-spin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Dropdown menu styles (global)
+.ant-select-dropdown {
+  border-radius: $radius-md;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
+              0 0 0 1px rgba(0, 0, 0, 0.05);
+  padding: $space-2;
+
+  .ant-select-item {
+    border-radius: $radius-sm;
+    padding: $space-3 $space-4;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $gray-50;
+    }
+
+    &.ant-select-item-option-selected {
+      background: linear-gradient(135deg, rgba($primary-color, 0.1) 0%, rgba($primary-light, 0.1) 100%);
+      color: $primary-color;
+      font-weight: 700;
+    }
+
+    &.ant-select-item-option-active {
+      background: $gray-100;
+    }
+  }
+}
+
+// Date picker dropdown
+.ant-picker-dropdown {
+  .ant-picker-panel-container {
+    border-radius: $radius-lg;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+    background: linear-gradient(135deg, $primary-color 0%, $primary-light 100%);
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border-color: $primary-color;
+  }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+  .container .ant-form {
+    .ant-input,
+    input[type="tel"],
+    .ant-input-number,
+    .ant-picker,
+    .ant-select-selector,
+    textarea,
+    .ant-btn-primary {
+      transition: none;
+    }
+  }
+}
+
