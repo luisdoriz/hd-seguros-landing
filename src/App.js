@@ -31,25 +31,28 @@ const App = () => {
         </div>
       </div>
       <Routes />
-      <Row
-        justify="center"
-        className="banner"
-        align="middle"
-        gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-      >
-        <Col span={20}>
-          <h3>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://goo.gl/maps/sqiw3uLuL3CM4pNAA"
-            >
-              Direccion: Edificio A piso 5 Av. Ricardo Margain Zozaya 555,
-              Corporativo Santa Engracia 1er Sector, 66273 Monterrey, N.L.
-            </a>
-          </h3>
-        </Col>
-      </Row>
+      <footer className="main-footer">
+        <Row justify="center" align="middle" gutter={[24, 24]}>
+          <Col xs={24} md={16} lg={12}>
+            <div className="footer-content">
+              <div className="footer-icon">📍</div>
+              <div className="footer-text">
+                <h4>Visítanos en nuestra oficina</h4>
+                <p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://goo.gl/maps/sqiw3uLuL3CM4pNAA"
+                  >
+                    Edificio A piso 5, Av. Ricardo Margain Zozaya 555,
+                    Corporativo Santa Engracia 1er Sector, 66273 Monterrey, N.L.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </footer>
       <a
         href="https://api.whatsapp.com/send/?phone=5218120351847&text&type=phone_number&app_absent=0&text=%C2%A1Hola!%20%20mi%20nombre%20es:%0ADeseo%20cotizar%20seguro%20de:"
         class="whatsapp_float"

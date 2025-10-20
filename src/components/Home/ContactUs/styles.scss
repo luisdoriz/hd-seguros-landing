@@ -1,75 +1,328 @@
 @import "src/assets/colors";
 @import "src/assets/spaces";
 
+// Contact Section Styles
+.contact-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info {
+  .contact-header {
+    margin-bottom: 40px;
+
+    .contact-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $third-color;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .contact-subtitle {
+      font-size: 1.1rem;
+      color: #64748b;
+      line-height: 1.6;
+    }
+  }
+
+  .contact-methods {
+    margin-bottom: 40px;
+
+    .contact-method {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        border-color: $primary-color;
+      }
+
+      .method-icon {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, $primary-color, #ff8c42);
+        border-radius: 12px;
+        flex-shrink: 0;
+      }
+
+      .method-content {
+        flex: 1;
+
+        h4 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: $third-color;
+          margin-bottom: 4px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: $secondary-color;
+          margin-bottom: 4px;
+
+          a {
+            color: $primary-color;
+            text-decoration: none;
+            font-weight: 600;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        span {
+          font-size: 0.9rem;
+          color: #64748b;
+        }
+      }
+    }
+  }
+
+  .benefits-list {
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $third-color;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 0.95rem;
+        color: #64748b;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.contact-form-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+
+  .form-header {
+    background: linear-gradient(135deg, $secondary-color, $third-color);
+    color: white;
+    padding: 32px;
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    p {
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+  }
+
+  .contact-form {
+    padding: 32px;
+
+    .ant-form-item {
+      margin-bottom: 24px;
+    }
+
+    .ant-input,
+    .ant-input-affix-wrapper,
+    .ant-select-selector,
+    .ant-picker {
+      height: 48px;
+      border-radius: 8px;
+      border: 2px solid #e2e8f0;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 3px rgba(239, 122, 62, 0.1);
+      }
+    }
+
+    .ant-input.ant-input-lg {
+      min-height: 120px;
+      padding: 12px;
+      resize: vertical;
+    }
+
+    .ant-btn-primary {
+      height: 48px;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      background: linear-gradient(135deg, $primary-color, #ff8c42);
+      border: none;
+      box-shadow: 0 4px 15px rgba(239, 122, 62, 0.3);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(239, 122, 62, 0.4);
+        background: linear-gradient(135deg, #ff8c42, $primary-color);
+      }
+    }
+  }
+
+  .form-footer {
+    padding: 0 32px 32px;
+
+    .privacy-note {
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+      margin: 0;
+      padding: 16px;
+      background: #f8fafc;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+  }
+}
+
+.form-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  p {
+    margin-top: 16px;
+    color: #64748b;
+    font-size: 1rem;
+  }
+}
+
+// Legacy styles
 .container {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.CUcard {
-  background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 2px solid $third-color;
-  height: 100%;
-  padding-top: 15px;
-  padding-bottom: 0px;
-}
+
 .title {
   color: $third-color;
   font-weight: bold;
 }
+
 .titleCarousel {
   color: black;
   font-weight: bold;
 }
+
 .banner {
   background-color: $secondary-color;
   padding-top: 25px;
-  // padding-left: 100px;
-  // padding-right: 100px;
   padding-bottom: 25px;
 }
+
 .header {
   background-color: $secondary-color;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
 }
+
 .banner h2 {
   color: white;
   font-weight: bold;
 }
+
 .banner h3 {
   color: white;
   a {
     color: inherit;
   }
 }
+
 .header h2 {
   color: white;
   font-weight: bold;
 }
+
 .header h3 {
   color: white;
 }
+
 .accent {
   color: $primary-color;
 }
+
 .secondary {
   color: white;
 }
+
 .paddingT {
   padding-top: 25px;
 }
+
 .paddingB {
   padding-bottom: 50px;
 }
+
 .homeText h1 {
   font-weight: bold;
 }
+
 .homeText h2 {
   font-weight: bold;
 }
+
 .termsHeader {
   text-align: center;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .contact-info .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-container {
+    .form-header,
+    .contact-form {
+      padding: 24px;
+    }
+  }
 }
