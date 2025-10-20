@@ -123,6 +123,85 @@ const Home = () => {
         </Row>
       </section>
 
+      {/* Features Section */}
+      <section className="features-section">
+        <Row justify="center" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+          <Col xs={22} sm={20} md={18} lg={16}>
+            <div className="features-content">
+              <div className="section-header">
+                <h2 className="section-title">¿Por qué elegirnos?</h2>
+                <p className="section-subtitle">
+                  Más de 30 años protegiendo a las familias mexicanas con los mejores seguros
+                </p>
+                <div className="title-underline"></div>
+              </div>
+
+              <div className="features-grid">
+                <div className="feature-card">
+                  <div className="feature-icon-wrapper">
+                    <span className="feature-icon">🎯</span>
+                  </div>
+                  <h3 className="feature-title">Asesoría Personalizada</h3>
+                  <p className="feature-description">
+                    Expertos dedicados que te guían para encontrar el seguro perfecto para ti y tu familia
+                  </p>
+                </div>
+
+                <div className="feature-card">
+                  <div className="feature-icon-wrapper">
+                    <span className="feature-icon">💰</span>
+                  </div>
+                  <h3 className="feature-title">Mejores Precios</h3>
+                  <p className="feature-description">
+                    Comparamos múltiples aseguradoras para ofrecerte las tarifas más competitivas del mercado
+                  </p>
+                </div>
+
+                <div className="feature-card">
+                  <div className="feature-icon-wrapper">
+                    <span className="feature-icon">⚡</span>
+                  </div>
+                  <h3 className="feature-title">Respuesta Inmediata</h3>
+                  <p className="feature-description">
+                    Cotización en menos de 24 horas y atención rápida cuando más lo necesitas
+                  </p>
+                </div>
+
+                <div className="feature-card">
+                  <div className="feature-icon-wrapper">
+                    <span className="feature-icon">🏥</span>
+                  </div>
+                  <h3 className="feature-title">Red de Hospitales</h3>
+                  <p className="feature-description">
+                    Acceso a los mejores hospitales y clínicas privadas en todo México
+                  </p>
+                </div>
+
+                <div className="feature-card">
+                  <div className="feature-icon-wrapper">
+                    <span className="feature-icon">📞</span>
+                  </div>
+                  <h3 className="feature-title">Atención 24/7</h3>
+                  <p className="feature-description">
+                    Soporte continuo para emergencias y consultas en cualquier momento del día
+                  </p>
+                </div>
+
+                <div className="feature-card">
+                  <div className="feature-icon-wrapper">
+                    <span className="feature-icon">🔒</span>
+                  </div>
+                  <h3 className="feature-title">Confianza y Seguridad</h3>
+                  <p className="feature-description">
+                    Más de 30 años de experiencia respaldando a miles de familias mexicanas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </section>
+
       {/* About Section */}
       <section className="about-section">
         <Row justify="center" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
@@ -179,7 +258,7 @@ const Home = () => {
       {/* Products Section */}
       <section className="products-section" ref={productsRef}>
         <Row justify="center">
-          <Col xs={22} sm={20} md={18} lg={16}>
+          <Col xs={22} sm={20} md={20} lg={20} xl={18}>
             <div className="section-header">
               <h2 className="section-title">Nuestros Productos</h2>
               <p className="section-subtitle">Encuentra el seguro perfecto para ti y tu familia</p>

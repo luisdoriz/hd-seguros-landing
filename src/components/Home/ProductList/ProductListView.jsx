@@ -1,12 +1,14 @@
 import React from 'react';
 import { Col, Row, Card } from 'antd';
-import { 
-  MedicineBoxOutlined, 
-  BookOutlined, 
-  HeartOutlined, 
-  GlobalOutlined, 
+import {
+  MedicineBoxOutlined,
+  BookOutlined,
+  HeartOutlined,
+  GlobalOutlined,
   CarOutlined,
-  ArrowRightOutlined 
+  ArrowRightOutlined,
+  LeftOutlined,
+  RightOutlined
 } from "@ant-design/icons";
 import { Link } from 'react-router-dom';
 import './styles.scss';
@@ -24,6 +26,8 @@ const getInsuranceIcon = (tag) => {
   return iconMap[tag] || <MedicineBoxOutlined />;
 };
 
+// Carousel arrow components (currently unused but available for future carousel implementation)
+// eslint-disable-next-line no-unused-vars
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
   <button
     {...props}
@@ -38,6 +42,8 @@ const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <LeftOutlined />
   </button>
 );
+
+// eslint-disable-next-line no-unused-vars
 const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
   <button
     {...props}
@@ -55,14 +61,16 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
 
 const ProductListView = () => {
   return (
-    <Row justify='center' gutter={[24, 24]}>
+    <Row justify='center' gutter={[32, 32]}>
       {data.map((insurance, i) => (
-        <Col 
-          key={i} 
-          xs={24} 
-          sm={12} 
-          md={8} 
-          lg={6}
+        <Col
+          key={i}
+          xs={24}
+          sm={24}
+          md={12}
+          lg={12}
+          xl={8}
+          xxl={8}
           className="product-col"
         >
           <Link to={`/insurance/${insurance.tag}`} className="product-link">
@@ -91,15 +99,7 @@ const ProductListView = () => {
                     <ArrowRightOutlined className="arrow-icon" />
                   </div>
                 }
-                description={
-                  <div className="product-description">
-                    <p>Protección completa para ti y tu familia</p>
-                    <div className="product-features">
-                      <span className="feature-tag">✓ Cobertura amplia</span>
-                      <span className="feature-tag">✓ Sin complicaciones</span>
-                    </div>
-                  </div>
-                }
+                description={null}
               />
             </Card>
           </Link>

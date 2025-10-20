@@ -1,6 +1,37 @@
-$primary-color: #ef7a3e;
-$secondary-color: #21376e;
-$third-color: #1c488b;
+// Primary brand colors
+$primary-color: #ef7a3e;           // Vibrant orange - CTAs, highlights
+$primary-dark: #d6652d;            // Darker orange for hover states
+$primary-light: #ff9463;           // Lighter orange for accents
 
-$background-primary-color: white; //example
-$background-secondary-color: white; //examples
+// Secondary colors
+$secondary-color: #1a2f5a;         // Deep navy blue - improved contrast
+$secondary-light: #2d4a7c;         // Medium navy for hover states
+$third-color: #0f2847;             // Darkest blue for text - WCAG AA compliant
+
+// Neutral colors
+$gray-50: #f8fafc;                 // Lightest background
+$gray-100: #f1f5f9;                // Light background
+$gray-200: #e2e8f0;                // Borders, dividers
+$gray-300: #cbd5e1;                // Subtle borders
+$gray-400: #94a3b8;                // Disabled text
+$gray-500: #64748b;                // Secondary text
+$gray-600: #475569;                // Body text
+$gray-700: #334155;                // Headings
+$gray-800: #1e293b;                // Dark text
+$gray-900: #0f172a;                // Darkest text
+
+// Semantic colors
+$success-color: #10b981;           // Success states, checkmarks
+$warning-color: #f59e0b;           // Warnings
+$error-color: #ef4444;             // Errors
+$info-color: #3b82f6;              // Information
+
+// Background colors
+$background-primary-color: white;
+$background-secondary-color: $gray-50;
+$background-dark: linear-gradient(135deg, $secondary-color 0%, $third-color 100%);
+
+// Opacity values
+$overlay-light: rgba(255, 255, 255, 0.1);
+$overlay-medium: rgba(255, 255, 255, 0.2);
+$overlay-dark: rgba(0, 0, 0, 0.5);

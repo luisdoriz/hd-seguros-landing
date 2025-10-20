@@ -9,27 +9,29 @@ import logo from './assets/images/logo.png';
 const App = () => {
   return (
     <BrowserRouter style={{ margin: '150px' }}>
-      <div style={{ height: 100 }}>
-        <div id="nav" className="nav">
-          <Row align="middle" justify="space-between">
-            <Col className="logoContainer" lg={4} md={6} sm={10} xs={18}>
-              <NavLink exact="true" to="/">
-                <img className="logoImg" src={logo} alt="logo" />
+      <nav id="nav" className="nav">
+        <div className="nav-container">
+          <Row align="middle" justify="space-between" gutter={[16, 8]}>
+            <Col className="logoContainer" lg={4} md={6} sm={12} xs={16}>
+              <NavLink exact="true" to="/" className="logo-link">
+                <img className="logoImg" src={logo} alt="HD Seguros Logo" />
               </NavLink>
             </Col>
-            <Col lg={14} md={12} sm={10} xs={4}>
-              <Row justify="end">
-                <a href="tel:+528120351847">Tel. 8120351847</a>
-              </Row>
-              <Row justify="end">
-                <NavLink exact="true" to="/terms">
+            <Col className="nav-links-container" lg={16} md={14} sm={12} xs={8}>
+              <div className="nav-links">
+                <a href="tel:+528120351847" className="nav-phone">
+                  <span className="phone-icon">📞</span>
+                  <span className="phone-number">81 2035 1847</span>
+                </a>
+                <NavLink exact="true" to="/terms" className="nav-terms">
                   Términos y condiciones
                 </NavLink>
-              </Row>
+              </div>
             </Col>
           </Row>
         </div>
-      </div>
+      </nav>
+      <div className="nav-spacer"></div>
       <Routes />
       <footer className="main-footer">
         <Row justify="center" align="middle" gutter={[24, 24]}>

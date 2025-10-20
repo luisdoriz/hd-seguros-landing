@@ -10,6 +10,7 @@
 .product-link {
   display: block;
   width: 100%;
+  max-width: 400px;
   text-decoration: none;
   color: inherit;
 
@@ -21,44 +22,135 @@
 
 .product-card {
   height: 100%;
-  border-radius: 16px;
+  width: 100%;
+  border-radius: $radius-2xl;
   overflow: hidden;
   border: none;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   background: white;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(239, 122, 62, 0.05) 0%, rgba(26, 47, 90, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, $primary-color 0%, $primary-light 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+  }
 
   &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-16px) scale(1.02);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.15),
+                0 0 0 3px rgba(239, 122, 62, 0.2);
 
-    .product-overlay {
+    &::before {
       opacity: 1;
     }
 
+    &::after {
+      transform: scaleX(1);
+    }
+
+    .product-overlay {
+      opacity: 1;
+      backdrop-filter: blur(8px);
+    }
+
     .arrow-icon {
-      transform: translateX(4px);
+      transform: translateX(8px) scale(1.2);
     }
 
     .product-image {
-      transform: scale(1.05);
+      transform: scale(1.1);
+      filter: brightness(1.05);
+    }
+
+    .product-icon {
+      animation: pulse 1.2s ease-in-out infinite;
+      transform: scale(1.15);
+    }
+
+    .feature-tag {
+      transform: translateX(4px);
     }
   }
 
   .ant-card-body {
-    padding: 24px;
+    padding: $space-5;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      padding: $space-6;
+    }
+
+    @media (min-width: 1200px) {
+      padding: $space-6;
+    }
   }
 
   .product-image-container {
     position: relative;
-    height: 200px;
+    height: 240px;
     overflow: hidden;
+    background: $gray-100;
+
+    @media (min-width: 576px) {
+      height: 240px;
+    }
+
+    @media (min-width: 768px) {
+      height: 240px;
+    }
+
+    @media (min-width: 992px) {
+      height: 240px;
+    }
+
+    @media (min-width: 1200px) {
+      height: 240px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
 
     .product-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.3s ease;
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .product-overlay {
@@ -67,17 +159,18 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(135deg, rgba(239, 122, 62, 0.9), rgba(33, 55, 110, 0.9));
+      background: linear-gradient(135deg, rgba(239, 122, 62, 0.95) 0%, rgba(26, 47, 90, 0.95) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
       .product-icon {
-        font-size: 3rem;
+        font-size: 4rem;
         color: white;
-        animation: pulse 2s infinite;
+        filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.4));
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
   }
@@ -86,43 +179,99 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 12px;
+    margin-bottom: $space-4;
+    padding-bottom: $space-3;
+    border-bottom: 2px solid $gray-100;
+    transition: border-color 0.3s ease;
+    gap: $space-3;
 
     h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 800;
       color: $third-color;
       margin: 0;
-      line-height: 1.3;
+      line-height: 1.4;
       flex: 1;
+      letter-spacing: -0.01em;
+      transition: color 0.3s ease;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+      white-space: normal;
+      min-height: auto;
     }
 
     .arrow-icon {
       color: $primary-color;
-      font-size: 1rem;
-      transition: transform 0.3s ease;
-      margin-left: 8px;
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 4px rgba(239, 122, 62, 0.3));
       margin-top: 2px;
     }
   }
 
   .product-description {
-    p {
-      color: #64748b;
-      font-size: 0.9rem;
-      margin-bottom: 16px;
-      line-height: 1.5;
-    }
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 
     .product-features {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: $space-2;
+      background: linear-gradient(135deg, $gray-50 0%, rgba(239, 122, 62, 0.03) 100%);
+      padding: $space-3;
+      border-radius: $radius-md;
+      border: 1px solid $gray-100;
+
+      @media (min-width: 768px) {
+        padding: $space-4;
+        gap: $space-3;
+      }
 
       .feature-tag {
-        font-size: 0.8rem;
-        color: #10b981;
-        font-weight: 500;
+        font-size: clamp(0.8125rem, 1.5vw, 0.9375rem);
+        color: $success-color;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: $space-2;
+        transition: transform 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media (max-width: 576px) {
+          font-size: 0.8125rem;
+        }
+
+        &::before {
+          content: '→';
+          color: $primary-color;
+          font-weight: bold;
+          opacity: 0;
+          transform: translateX(-8px);
+          transition: all 0.3s ease;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .product-title {
+      border-color: $primary-color;
+
+      h3 {
+        color: $primary-color;
+      }
+    }
+
+    .feature-tag {
+      &::before {
+        opacity: 1;
+        transform: translateX(0);
       }
     }
   }
@@ -133,7 +282,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }
 
@@ -142,15 +291,10 @@
   color: black;
 }
 
+// Utility classes
 .homeImg {
   height: auto;
   width: 75%;
-}
-
-.logoImg {
-  padding: 20px 0;
-  max-height: 120px;
-  max-width: 100%;
 }
 
 .loader {
@@ -159,29 +303,81 @@
   justify-content: center;
 }
 
-.logoContainer {
-  text-align: left;
-}
-
-.nav {
-  padding-top: 0px;
-  width: 100%;
-  position: fixed;
-  background-color: $background-primary-color;
-  z-index: 15;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-// Responsive adjustments
-@media (max-width: 768px) {
+// Responsive adjustments - Fully fluid
+@media (max-width: 1199px) {
   .product-card {
+    &:hover {
+      transform: translateY(-12px) scale(1.015);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .product-card {
+    .product-overlay .product-icon {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .product-card {
+    border-radius: $radius-xl;
+
     .product-image-container {
-      height: 160px;
+      .product-overlay .product-icon {
+        font-size: 3rem;
+      }
     }
 
-    .product-title h3 {
-      font-size: 1rem;
+    .ant-card-body {
+      padding: $space-5;
+    }
+
+    .product-title {
+      margin-bottom: $space-3;
+      padding-bottom: $space-2;
+    }
+
+    &:hover {
+      transform: translateY(-8px) scale(1.01);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .product-card {
+    .ant-card-body {
+      padding: $space-4;
+    }
+
+    .product-title {
+      margin-bottom: $space-3;
+    }
+
+    .product-description {
+      .product-features {
+        padding: $space-3;
+        gap: $space-2;
+      }
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .product-card {
+    .product-title {
+      h3 {
+        font-size: 0.9375rem;
+      }
+    }
+
+    .product-description {
+      .product-features {
+        .feature-tag {
+          font-size: 0.75rem;
+        }
+      }
     }
   }
 }
