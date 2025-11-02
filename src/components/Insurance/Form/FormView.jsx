@@ -1,6 +1,7 @@
 // eslint-disable-no-template-curly-in-string
 import React, { Component } from 'react';
 import { Col, Row, Input, InputNumber, Select, Form, Button, DatePicker } from 'antd';
+import './styles.scss';
 
 const { Option } = Select;
 const { TextArea } = Input;
